@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyalı bak - ŞSÖAL-Kütüphanesi</title>
+  
+</head>
+<body>
+
+    
+
+
+    <style>
+
+                
+        *{
+            margin: 0;
+            padding: 0;
+            
+            font-family: 'Poppins', sans-serif;
+            
+            
+        }
+
+      body{
+        background: #fff;
+        min-height: 100vh;
+        overflow-x: hidden;
+
+     }
+      #raf7{
+        position: absolute;
+        top: 44%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: black;
+        font-size: 16px;
+        padding: 5px 21px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        visibility: visible;
+        width: 210px;
+        height: 45px;
+     
+    
+    }
+      #raf8{
+        position: absolute; 
+        top:42%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: black;
+        font-size: 16px;
+        padding: 5px 21px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 210px;
+        height: 45px;
+        
+
+       
+
+
+
+        
+     
+    
+    }
+
+
+    #container img {
+    height:90vh;
+    width: 100%;
+   
+    z-index:10;
+    
+    padding-top: 40px;
+   
+    
+  }
+
+    #kitaplikraf15{
+        visibility: hidden;
+        position: absolute; 
+        top:42%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: black;
+        font-size: 16px;
+        padding: 5px 21px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 210px;
+        height: 45px;
+        
+    }
+
+
+ </style>
+
+
+
+
+
+    <div id="container">
+
+        <img src="fotolar/tumkitaplik.jpg" alt="Resim yüklenmedi" id="kitaplik" width="3200">
+     
+    </div>
+
+
+
+   
+    <button id="kitaplikraf15"><a href="./detaybak4.html">Yakından bak</a></button>
+
+
+    <button id="raf7">Yakından bak</button>
+    <button id="raf8">Yakından bak</button>
+    
+
+    <script type="text/javascript">
+
+        let isVisible = false;
+
+      
+
+        let button7 = document.getElementById('raf7');
+        let button8 = document.getElementById('raf8');
+     
+        let yakınbutton1 = document.getElementById('kitaplikraf15')
+
+
+        let image = document.querySelector("img");
+        
+
+        button7.addEventListener('click',()=> {
+
+
+
+            if(isVisible == false){
+                image.src = 'fotolar/ortakitaplik2.jpg';
+                button7.textContent = 'X';
+                button7.style.backgroundColor = "red";
+                button7.style.color = "white";
+
+                
+
+                
+
+               
+
+
+                button8.style.visibility = "hidden"
+           
+                button7.style.top = "13%"
+                button7.style.left = "80%"
+                
+
+                
+
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/tumkitaplik.jpg';
+                button7.textContent = "Yakın'dan bak";
+                button7.style.backgroundColor = "white";
+                button7.style.color = "black";
+
+                
+
+                button8.style.visibility = "visible"
+          
+
+                button7.style.top = "43%"
+                button7.style.left = "27%"
+
+                isVisible = false;
+            }  
+        })
+
+        button8.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/ortakitaplik1.jpg';
+                button8.textContent = 'X';
+                button8.style.backgroundColor = "red";
+                button8.style.color = "white";
+
+                yakınbutton1.style.visibility = "visible"
+
+             
+                button7.style.visibility = "hidden"
+              
+
+                button8.style.top = "13%"
+                button8.style.left = "80%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/tumkitaplik.jpg';
+                button8.textContent = "Yakın'dan bak";
+                button8.style.backgroundColor = "white";
+                button8.style.color = "black";
+                
+
+                button7.style.visibility = "visible"
+
+                yakınbutton1.style.visibility = "hidden"
+           
+
+                button8.style.top = "42%"
+                button8.style.left = "55%"
+
+                isVisible = false;
+            }  
+            })
+
+
+
+
+
+ 
+
+
+
+
+            
+
+    </script>
+</body>
+</html>

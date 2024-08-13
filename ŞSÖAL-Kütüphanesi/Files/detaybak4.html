@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyalı bak - ŞSÖAL-Kütüphanesi</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <div id="container"> 
+        <img src="fotolar/kitaplik1.jpg" alt="Resim yüklenmedi" id="kitaplik" width="900">
+        
+        
+
+    </div>
+
+    <button id="kapat">X</button>
+    
+
+    <button id="raf1">Yakından bak</button>
+    <button id="raf2">Yakından bak</button>
+    <button id="raf3">Yakından bak</button>
+    <button id="raf4">Yakından bak</button>
+    <button id="raf5">Yakından bak</button>
+    <button id="raf6">Yakından bak</button>
+    <button id="raf7">Yakından bak</button>
+    <button id="raf8">Yakından bak</button>
+    <button id="raf9">Yakından bak</button>
+
+    
+
+    <script type="text/javascript">
+
+        let isVisible = false;
+
+      
+        let button1 = document.getElementById('raf1');
+        let button2 = document.getElementById('raf2');
+        let button3 = document.getElementById('raf3');
+        let button4 = document.getElementById('raf4');
+        let button5 = document.getElementById('raf5');
+        let button6 = document.getElementById('raf6');
+        let button7 = document.getElementById('raf7');
+        let button8 = document.getElementById('raf8');
+        let button9 = document.getElementById('raf9');
+       
+
+
+        let image = document.querySelector("img");
+        
+
+        button7.addEventListener('click',()=> {
+
+
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik2.jpg';
+                button7.textContent = 'X';
+                button7.style.backgroundColor = "red";
+                button7.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+
+                button7.style.top = "14%"
+                
+
+                
+
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button7.textContent = "Yakın'dan bak";
+                button7.style.backgroundColor = "white";
+                button7.style.color = "black";
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button8.style.visibility = "visible"
+                button9.style.visibility = "visible"
+
+                button7.style.top = "85%"
+
+                isVisible = false;
+            }  
+        })
+
+        button8.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik3.jpg';
+                button8.textContent = 'X';
+                button8.style.backgroundColor = "red";
+                button8.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+
+                button8.style.top = "11%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button8.textContent = "Yakın'dan bak";
+                button8.style.backgroundColor = "white";
+                button8.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button9.style.visibility = "visible"
+
+                button8.style.top = "62%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button9.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik4.jpg';
+                button9.textContent = 'X';
+                button9.style.backgroundColor = "red";
+                button9.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button9.style.top = "11%"
+                button9.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button9.textContent = "Yakın'dan bak";
+                button9.style.backgroundColor = "white";
+                button9.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button9.style.top = "86%"
+                button9.style.left = "50%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button6.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik5.jpg';
+                button6.textContent = 'X';
+                button6.style.backgroundColor = "red";
+                button6.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+
+                button6.style.top = "11%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button6.textContent = "Yakın'dan bak";
+                button6.style.backgroundColor = "white";
+                button6.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button8.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button9.style.visibility = "visible"
+
+                button6.style.top = "37%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button3.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik6.jpg';
+                button3.textContent = 'X';
+                button3.style.backgroundColor = "red";
+                button3.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button3.style.top = "11%"
+                button3.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button3.textContent = "Yakın'dan bak";
+                button3.style.backgroundColor = "white";
+                button3.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button9.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button3.style.top = "55%"
+                button3.style.left = "50%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button2.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik7.jpg';
+                button2.textContent = 'X';
+                button2.style.backgroundColor = "red";
+                button2.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button2.style.top = "11%"
+                button2.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button2.textContent = "Yakın'dan bak";
+                button2.style.backgroundColor = "white";
+                button2.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button9.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button2.style.top = "24%"
+                button2.style.left = "50%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button4.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik8.jpg';
+                button4.textContent = 'X';
+                button4.style.backgroundColor = "red";
+                button4.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button4.style.top = "11%"
+                button4.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button4.textContent = "Yakın'dan bak";
+                button4.style.backgroundColor = "white";
+                button4.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button9.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button4.style.top = "86%"
+                button4.style.left = "35%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button5.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik9.jpg';
+                button5.textContent = 'X';
+                button5.style.backgroundColor = "red";
+                button5.style.color = "white";
+
+                button1.style.visibility = "hidden"
+                button1.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button5.style.top = "11%"
+                button5.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button5.textContent = "Yakın'dan bak";
+                button5.style.backgroundColor = "white";
+                button5.style.color = "black";
+                
+                button1.style.visibility = "visible"
+                button1.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button9.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button5.style.top = "63%"
+                button5.style.left = "35%"
+
+                isVisible = false;
+            }  
+            })
+
+
+            button1.addEventListener('click',()=> {
+
+            if(isVisible == false){
+                image.src = 'fotolar/kitaplik10.jpg';
+                button1.textContent = 'X';
+                button1.style.backgroundColor = "red";
+                button1.style.color = "white";
+
+                button5.style.visibility = "hidden"
+                button5.style.visibility = "hidden"
+                button3.style.visibility = "hidden"
+                button9.style.visibility = "hidden"
+                button2.style.visibility = "hidden"
+                button4.style.visibility = "hidden"
+                button6.style.visibility = "hidden"
+                button7.style.visibility = "hidden"
+                button8.style.visibility = "hidden"
+
+                button1.style.top = "11%"
+                button1.style.left = "66%"
+                
+                isVisible = true;
+                
+            }else{
+                image.src = 'fotolar/kitaplik1.jpg';
+                button1.textContent = "Yakın'dan bak";
+                button1.style.backgroundColor = "white";
+                button1.style.color = "black";
+                
+                button5.style.visibility = "visible"
+                button5.style.visibility = "visible"
+                button3.style.visibility = "visible"
+                button9.style.visibility = "visible"
+                button2.style.visibility = "visible"
+                button4.style.visibility = "visible"
+                button6.style.visibility = "visible"
+                button7.style.visibility = "visible"
+                button8.style.visibility = "visible"
+
+                button1.style.top = "40%"
+                button1.style.left = "35%"
+
+                isVisible = false;
+            }  
+            })
+
+
+
+
+            
+
+    </script>
+</body>
+</html>
