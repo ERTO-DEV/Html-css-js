@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emiregerium.com</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #000000; 
+      background-color: #f9f9f9;
+    }
+    .navbar {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      font-size: 24px;
+      font-weight: bold; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    .navbar a {
+      color: #000000; 
+      text-decoration: none; 
+    }
+    .header {
+      text-align: left; 
+      padding: 20px;
+      font-size: 56px; 
+      font-weight: bold;
+      position: absolute; 
+      top: 50%; 
+      left: 100px;
+      transform: translateY(-50%); 
+      color: #ffffff; 
+    }
+    .subheader {
+      text-align: left; 
+      font-size: 18px;
+      position: absolute;
+      top: 55%; 
+      left: 167px; 
+      transform: translateY(-50%); 
+      color: #ffffff; 
+      transition: opacity 0.3s; 
+    }
+    .hero-image {
+      width: 100%;
+      height: 95vh; 
+      object-fit: cover; 
+    }
+    .section {
+      text-align: center;
+      padding: 40px;
+      background-color: #000000;
+      height: auto;
+    }
+    .product {
+      display: inline-block;
+      width: 220px; 
+      padding: 20px;
+      margin: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s; 
+    }
+    .product:hover {
+      transform: scale(1.1); 
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px; 
+    }
+    .product p {
+      margin-top: 10px;
+    }
+
+    .team-section {
+      text-align: center;
+      padding: 40px;
+     
+      background-color: #ffffff;
+      height:auto;
+    }
+    .team-member {
+      display: inline-block;
+      width: 220px; 
+      padding: 20px;
+      margin: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s; 
+    }
+    .team-member:hover {
+      transform: scale(1.1);
+    }
+    .team-member img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px; 
+    }
+    .team-member p {
+      margin-top: 10px;
+    }
+    .ürün{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: -87px;
+      color: rgba(0, 0, 0, 0.1);
+      font-size: 55px;
+      transition: font-weight 0.3s; 
+    }
+    .ürün:hover {
+      font-weight: bold; 
+    }
+
+    .ekip{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: -87px;
+      color: rgba(0, 0, 0, 0.1);
+      font-size: 55px;
+      transition: font-weight 0.3s; 
+    }
+    .kimiz{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: -87px;
+      color: rgba(0, 0, 0, 0.1);
+      font-size: 55px;
+      transition: font-weight 0.3s;
+      height: auto;
+    }
+    .ekip:hover {
+      font-weight: bold; 
+    }
+    .footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 1px;
+      
+      position: relative;
+      margin-top: 10%;
+    }
+    .footer .logoalt {
+      font-size: 40px;
+      font-weight: bold;
+      padding-top: 0.8%;
+      margin: 0;
+      text-align: center;
+    }
+    .footer .slogan {
+      font-size: 14px;
+      margin-top: -0.1px;
+      text-align: center;
+    }
+    .footer h3 a {
+      color: #525252;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+    .footer h3 {
+      margin: 0;
+      left:100%;
+      padding-top: 1px;
+    }
+
+    .product a{
+        text-decoration: none;
+        color: #4e4e4e;
+        font-weight: bold;
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" style="color: #000000; text-decoration: none; font-weight: bold;">Emiregerium.com</a>
+  </div>
+  <img class="hero-image" src="sporcu_resmi.jpg" alt="Sporcu Adam Resmi">
+  <div class="header">Emiregerium.com</div>
+  <div class="subheader">Efsane Tercih Değil, Efsanelerin Tercihi.</div>
+
+  <div class="section" style="background-color: #f1f1f1;">
+    <h1 style="font-size: 40px; font-weight: bold;">Ürünlerimiz</h1>
+    <h1 class="ürün">Emiregerium.com</h1>
+        <div class="product">
+          <img src="" alt="Ürün1 foto" style="height: auto;">
+          <p>Ürün 1 Açıklama</p>
+          <p>Fiyat: $XX</p>
+          <button><a href="https://dolap.com/" target="_blank">Satın Al </a></button>
+        </div>
+        <div class="product">
+          <img src="" alt="Ürün2 foto" style="height: auto;">
+          <p>Ürün 2 Açıklama</p>
+          <p>Fiyat: $XX</p>
+          <button><a href="https://dolap.com/" target="_blank">Satın Al </a></button>
+        </div>
+        <div class="product">
+          <img src="" alt="Ürün3 foto" style="height: auto;">
+          <p>Ürün 3 Açıklama</p>
+          <p>Fiyat: $XX</p>
+          <button><a href="https://dolap.com/" target="_blank">Satın Al </a></button>
+        </div>
+        <div class="product">
+          <img src="" alt="Ürün4 foto" style="height: auto;">
+          <p>Ürün 4 Açıklama</p>
+          <p>Fiyat: $XX</p>
+          <button><a href="https://dolap.com/" target="_blank">Satın Al </a></button>
+    </div>
+  </div>
+
+  <div class="sectionkimiz" style="background-color: #f9f9f9;">
+    <h1 style="font-size: 40px; font-weight: bold; text-align: center;">Biz Kimiz?</h1>
+    <h1 class="kimiz">Emiregerium.com</h1>
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; max-width: 400px; padding: 20px;">
+        <img src="/resimler/bizkimiz.jpg" alt="Biz Kimiz Foto" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div style="flex: 1; max-width: 400px; padding: 20px;">
+        <h1 style="font-size: 26px; font-weight: bold; margin-top: 20px;">Efsane Tercihiniz</h1>
+        <p style="margin: 10px 0;">
+          Biz, spor dünyasına tutkuyla bağlı, yenilikçi ve deneyimli bir ekip olarak buradayız. Amacımız, sporcuların performansını en üst düzeye çıkarmak için kaliteli ürünler sunmaktır.
+        </p><br>
+  
+        <h4 style="font-size: 22px;  margin-top: 20px;">Tecrübeli Ekip</h4>
+        <p style="margin: 10px 0;">
+          Bir araya getirdiğimiz uzmanlarımız, spor ekipmanları ve ürünlerinde yılların deneyimine sahiptir. Müşterilerimizin ihtiyaçlarına uygun çözümler sunmak için buradayız.
+        </p><br>
+  
+        <h4 style="font-size: 22px;  margin-top: 20px;">Sporcuların Tercihi</h4>
+        <p style="margin: 10px 0;">
+          Sporcular, performanslarını artırmak ve hedeflerine ulaşmak için bize güveniyor. Onların tercihi olmak bizi gururlandırıyor ve motive ediyor.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+
+  <div class="team-section">
+    <h1 style="font-size: 40px; font-weight: bold;">Ekip</h1>
+    <h1 class="ekip">Emiregerium.com</h1>
+    <div class="team-member">
+      <img src="/resimler/erto.jpg" alt="Ekip Üyesi1 foto">
+      <p>Ertuğrul Yıldız</p>
+      <p>-Yazlım-</p>
+    </div>
+    <div class="team-member">
+      <img src="/resimler/emiregee.jpg" alt="Ekip Üyesi2 foto">
+      <p>Emir Ege Kazancı</p>
+      <p>-Satış ve yönetim-</p>
+    </div>
+    <div class="team-member">
+      <img src="/resimler/egehan.jpg" alt="Ekip Üyesi3 foto">
+      <p>Egehan Aslan</p>
+      <p>-Reklamcılık-</p>
+    </div>
+  </div>
+
+
+
+<div style="background-color: black;">
+  <h1 style="color: white; text-align: right; padding-top: 40px; margin-right: 100px;">Emiregerium.com ©</h1>
+  <h3 style="color: white;">Powered & Designed by: <a href="https://www.instagram.com/iam.ertus/" target="_blank" style="color: #4e4e4e;">Ertuğrul Yıldız</a></h3>
+
+</div>
+
+
+</body>
+</html>
